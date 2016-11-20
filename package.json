@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-dlw",
+  "version": "1.0.0",
+  "description": "An ESLint config used by the JavaScript developers at Delaware Consulting",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:unused": "eslint-find-rules --unused",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stvenoo/eslint-config-dlw"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript"
+  ],
+  "author": "Steven Van Eenoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stvenoo/eslint-config-dlw/issues"
+  },
+  "homepage": "https://github.com/Stvenoo/eslint-config-dlw",
+  "devDependencies": {
+    "codecov": "^1.0.1",
+    "eslint": "^3.10.1",
+    "eslint-find-rules": "^1.14.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.7.1",
+    "jest": "^17.0.3"
+  }
+}
