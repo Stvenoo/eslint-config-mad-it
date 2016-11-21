@@ -9,7 +9,8 @@
     "lint:unused": "eslint-find-rules --unused",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage && codecov"
+    "test:cov": "jest --coverage && codecov",
+    "prepublish": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
