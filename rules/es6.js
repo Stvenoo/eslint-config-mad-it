@@ -115,5 +115,13 @@ module.exports = {
 
     // enforce spacing around the * in yield* expressions
     'yield-star-spacing': ['error', 'after'],
+
+    // require destructuring from arrays and/or objects
+    'prefer-destructuring': ['error', {
+      array: true,
+      object: true,
+    }, {
+      enforceForRenamedProperties: false,
+    }],
   },
 };

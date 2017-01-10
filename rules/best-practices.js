@@ -235,5 +235,8 @@ module.exports = {
     // value of the condition comes first while the variable comes second
     // if ("red" === color)
     yoda: 'error',
+
+    // disallow async functions which have no await expression
+    'require-await': 'error',
   },
 };

@@ -95,5 +95,8 @@ module.exports = {
 
     // enforce comparing typeof expressions against valid strings
     'valid-typeof': ['error', { requireStringLiterals: true }],
+
+    // disallow await inside of loops
+    'no-await-in-loop': 'off',
   },
 };
