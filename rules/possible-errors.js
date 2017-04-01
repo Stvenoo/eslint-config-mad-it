@@ -1,5 +1,8 @@
 module.exports = {
   rules: {
+    // disallow comparing against -0
+    'no-compare-neg-zero': 'error',
+
     // disallow assignment in conditional expressions
     'no-cond-assign': ['error', 'always'],
 
