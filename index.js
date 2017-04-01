@@ -19,5 +19,6 @@ module.exports = {
     './rules/stylistic.js',
     './rules/es6.js',
     './rules/imports.js',
+    './rules/deprecated.js',
   ].map(require.resolve),
 };
