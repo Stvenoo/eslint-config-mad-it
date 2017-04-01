@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dlw",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "An ESLint config used by the JavaScript developers at Delaware Consulting",
   "main": "index.js",
   "scripts": {
