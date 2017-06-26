@@ -1,13 +1,13 @@
 module.exports = {
   rules: {
     // enforce linebreaks after opening and before closing array brackets
-    'array-bracket-newline': ['error', { multiline: true }],
+    'array-bracket-newline': 'off',
 
     // enforce consistent spacing inside array brackets
     'array-bracket-spacing': ['error', 'never'],
 
     // enforce line breaks after each array element
-    'array-element-newline': ['error', { multiline: true }],
+    'array-element-newline': 'off',
 
     // enforce consistent spacing inside single-line blocks
     'block-spacing': ['error', 'always'],
@@ -134,9 +134,10 @@ module.exports = {
     // specify the maximum length of a line in your program
     'max-len': [
       'error',
-      125,
-      2,
       {
+        code: 80,
+        tabWidth: 2,
+        comments: 125,
         ignoreUrls: true,
         ignoreComments: false,
         ignoreRegExpLiterals: true,
