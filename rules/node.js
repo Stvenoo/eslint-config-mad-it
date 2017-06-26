@@ -12,6 +12,9 @@ module.exports = {
     // require error handling in callbacks (err names need to hardcoded for this rule to work)
     'handle-callback-err': 'off',
 
+    // disallow use of the Buffer() constructor
+    'no-buffer-constructor': 'error',
+
     // disallow require calls to be mixed with regular variable declarations
     'no-mixed-requires': 'off',
 

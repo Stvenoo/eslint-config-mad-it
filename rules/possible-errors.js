@@ -1,5 +1,8 @@
 module.exports = {
   rules: {
+    // enforce “for” loop update clause moving the counter in the right direction.
+    'for-direction': 'error',
+
     // disallow comparing against -0
     'no-compare-neg-zero': 'error',
 

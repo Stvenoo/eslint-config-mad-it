@@ -1,7 +1,13 @@
 module.exports = {
   rules: {
+    // enforce linebreaks after opening and before closing array brackets
+    'array-bracket-newline': ['error', { multiline: true }],
+
     // enforce consistent spacing inside array brackets
     'array-bracket-spacing': ['error', 'never'],
+
+    // enforce line breaks after each array element
+    'array-element-newline': ['error', { multiline: true }],
 
     // enforce consistent spacing inside single-line blocks
     'block-spacing': ['error', 'always'],
@@ -305,6 +311,9 @@ module.exports = {
     // enforce padding within blocks
     'padded-blocks': ['error', 'never'],
 
+    // require or disallow padding lines between statements
+    'padding-line-between-statements': 'off',
+
     // require quotes around object literal property names
     'quote-props': [
       'error',
@@ -324,6 +333,9 @@ module.exports = {
 
     // enforce spacing before and after semicolons
     'semi-spacing': ['error', { before: false, after: true }],
+
+    // enforce location of semicolons
+    'semi-style': ['error', 'last'],
 
     // requires object keys to be sorted
     'sort-keys': ['off', 'asc', { caseSensitive: false, natural: true }],
@@ -376,6 +388,9 @@ module.exports = {
         },
       },
     ],
+
+    // enforce spacing around colons of switch statements
+    'switch-colon-spacing': ['error', { after: true, before: false }],
 
     // disallow spacing between template tags and their literals
     'template-tag-spacing': ['error', 'never'],
