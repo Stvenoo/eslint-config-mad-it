@@ -16,9 +16,13 @@ module.exports = {
 
     // require parens in arrow function arguments
     // http://eslint.org/docs/rules/arrow-parens
-    'arrow-parens': ['error', 'as-needed', {
-      requireForBlockBody: true,
-    }],
+    'arrow-parens': [
+      'error',
+      'as-needed',
+      {
+        requireForBlockBody: true,
+      },
+    ],
 
     // enforce consistent spacing before and after the arrow in arrow functions
     'arrow-spacing': ['error', { before: true, after: true }],
@@ -33,9 +37,12 @@ module.exports = {
     'no-class-assign': 'error',
 
     // disallow arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': ['error', {
-      allowParens: true,
-    }],
+    'no-confusing-arrow': [
+      'error',
+      {
+        allowParens: true,
+      },
+    ],
 
     // disallow reassigning const variables
     'no-const-assign': 'error',
@@ -68,22 +75,32 @@ module.exports = {
     'no-var': 'error',
 
     // require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': ['error', 'always', {
-      ignoreConstructors: false,
-      avoidQuotes: true,
-    }],
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true,
+      },
+    ],
 
     // require arrow functions as callbacks
-    'prefer-arrow-callback': ['error', {
-      allowNamedFunctions: false,
-      allowUnboundThis: true,
-    }],
+    'prefer-arrow-callback': [
+      'error',
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
+      },
+    ],
 
     // require const declarations for variables that are never reassigned after declared
-    'prefer-const': ['error', {
-      destructuring: 'all',
-      ignoreReadBeforeAssign: true,
-    }],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'all',
+        ignoreReadBeforeAssign: true,
+      },
+    ],
 
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     'prefer-numeric-literals': 'error',
@@ -117,11 +134,15 @@ module.exports = {
     'yield-star-spacing': ['error', 'after'],
 
     // require destructuring from arrays and/or objects
-    'prefer-destructuring': ['error', {
-      array: true,
-      object: true,
-    }, {
-      enforceForRenamedProperties: false,
-    }],
+    'prefer-destructuring': [
+      'error',
+      {
+        array: true,
+        object: true,
+      },
+      {
+        enforceForRenamedProperties: false,
+      },
+    ],
   },
 };

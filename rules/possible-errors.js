@@ -42,11 +42,15 @@ module.exports = {
 
     // disallow unnecessary parentheses
     // TODO discuss
-    'no-extra-parens': ['warn', 'all', {
-      conditionalAssign: true,
-      nestedBinaryExpressions: false,
-      returnAssign: false,
-    }],
+    'no-extra-parens': [
+      'warn',
+      'all',
+      {
+        conditionalAssign: true,
+        nestedBinaryExpressions: false,
+        returnAssign: false,
+      },
+    ],
 
     // disallow unnecessary semicolons
     'no-extra-semi': 'error',

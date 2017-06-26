@@ -6,9 +6,7 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module',
   },
-  plugins: [
-    'import',
-  ],
+  plugins: ['import'],
 
   settings: {
     'import/resolver': {
@@ -16,12 +14,8 @@ module.exports = {
         extensions: ['.js', '.json'],
       },
     },
-    'import/extensions': [
-      '.js',
-      '.jsx',
-    ],
-    'import/core-modules': [
-    ],
+    'import/extensions': ['.js', '.jsx'],
+    'import/core-modules': [],
     'import/ignore': [
       'node_modules',
       '\\.(coffee|scss|css|less|hbs|svg|json)$',
@@ -32,7 +26,6 @@ module.exports = {
     // ----------------------------------------------------------------------------------------
     // ---------------------------------- Static analysis -------------------------------------
     // ----------------------------------------------------------------------------------------
-
 
     // ensure imports point to files/modules that can be resolved
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
@@ -63,19 +56,20 @@ module.exports = {
 
     // prevent importing the submodules of other modules
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md
-    'import/no-internal-modules': ['off', {
-      allow: [],
-    }],
+    'import/no-internal-modules': [
+      'off',
+      {
+        allow: [],
+      },
+    ],
 
     // Forbid Webpack loader syntax in imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
     'import/no-webpack-loader-syntax': 'error',
 
-
     // ----------------------------------------------------------------------------------------
     // ---------------------------------- Helpful warnings ------------------------------------
     // ----------------------------------------------------------------------------------------
-
 
     // disallow invalid exports, e.g. multiple defaults
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/export.md
@@ -102,11 +96,9 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md
     'import/no-mutable-exports': 'error',
 
-
     // ----------------------------------------------------------------------------------------
     // ---------------------------------- Module systems --------------------------------------
     // ----------------------------------------------------------------------------------------
-
 
     // Warn if a module could be mistakenly parsed as a script
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/unambiguous.md
@@ -123,7 +115,6 @@ module.exports = {
     // No Node.js builtin modules
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
     'import/no-nodejs-modules': 'off',
-
 
     // ----------------------------------------------------------------------------------------
     // ---------------------------------- Style guide -----------------------------------------
@@ -143,17 +134,31 @@ module.exports = {
 
     // Ensure consistent use of file extension within the import path
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
-    'import/extensions': ['error', 'always', {
-      js: 'never',
-      jsx: 'never',
-    }],
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        js: 'never',
+        jsx: 'never',
+      },
+    ],
 
     // Enforce a convention in module import order
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-    'import/order': ['off', {
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-      'newlines-between': 'never',
-    }],
+    'import/order': [
+      'off',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
+        'newlines-between': 'never',
+      },
+    ],
 
     // Require a newline after the last import/require in a group
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md

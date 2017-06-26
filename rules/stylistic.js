@@ -13,13 +13,16 @@ module.exports = {
     camelcase: ['error', { properties: 'never' }],
 
     // require or disallow trailing commas
-    'comma-dangle': ['error', {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      imports: 'always-multiline',
-      exports: 'always-multiline',
-      functions: 'always-multiline',
-    }],
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'always-multiline',
+      },
+    ],
 
     // enforce consistent spacing before and after commas
     'comma-spacing': ['error', { before: false, after: true }],
@@ -59,23 +62,27 @@ module.exports = {
     'id-match': 'off',
 
     // this option sets a specific tab width for your code
-    indent: ['error', 2, {
-      SwitchCase: 1,
-      VariableDeclarator: 2,
-      outerIIFEBody: 1,
-      MemberExpression: 1,
-      CallExpression: {
-        arguments: 1,
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        VariableDeclarator: 2,
+        outerIIFEBody: 1,
+        MemberExpression: 1,
+        CallExpression: {
+          arguments: 1,
+        },
+        FunctionDeclaration: {
+          parameters: 1,
+          body: 1,
+        },
+        FunctionExpression: {
+          parameters: 1,
+          body: 1,
+        },
       },
-      FunctionDeclaration: {
-        parameters: 1,
-        body: 1,
-      },
-      FunctionExpression: {
-        parameters: 1,
-        body: 1,
-      },
-    }],
+    ],
 
     // specify whether double or single quotes should be used in JSX attributes
     'jsx-quotes': ['error', 'prefer-single'],
@@ -84,15 +91,18 @@ module.exports = {
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
 
     // require a space before & after certain keywords
-    'keyword-spacing': ['error', {
-      before: true,
-      after: true,
-      overrides: {
-        return: { after: true },
-        throw: { after: true },
-        case: { after: true },
+    'keyword-spacing': [
+      'error',
+      {
+        before: true,
+        after: true,
+        overrides: {
+          return: { after: true },
+          throw: { after: true },
+          case: { after: true },
+        },
       },
-    }],
+    ],
 
     // enforce position of line comments
     'line-comment-position': 'off',
@@ -104,29 +114,40 @@ module.exports = {
     'lines-around-comment': 'off',
 
     // require or disallow newlines around directives
-    'lines-around-directive': ['error', {
-      before: 'never',
-      after: 'always',
-    }],
+    'lines-around-directive': [
+      'error',
+      {
+        before: 'never',
+        after: 'always',
+      },
+    ],
 
     // specify the maximum depth that blocks can be nested
     'max-depth': ['error', 20],
 
     // specify the maximum length of a line in your program
-    'max-len': ['error', 125, 2, {
-      ignoreUrls: true,
-      ignoreComments: false,
-      ignoreRegExpLiterals: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    }],
+    'max-len': [
+      'error',
+      125,
+      2,
+      {
+        ignoreUrls: true,
+        ignoreComments: false,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      },
+    ],
 
     // specify the max number of lines in a file
-    'max-lines': ['off', {
-      max: 300,
-      skipBlankLines: true,
-      skipComments: true,
-    }],
+    'max-lines': [
+      'off',
+      {
+        max: 300,
+        skipBlankLines: true,
+        skipComments: true,
+      },
+    ],
 
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 'error',
@@ -145,10 +166,13 @@ module.exports = {
     'multiline-ternary': ['off', 'never'],
 
     // require a capital letter for constructors
-    'new-cap': ['error', {
-      newIsCap: false,
-      capIsNew: false,
-    }],
+    'new-cap': [
+      'error',
+      {
+        newIsCap: false,
+        capIsNew: false,
+      },
+    ],
 
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': 'error',
@@ -180,16 +204,19 @@ module.exports = {
 
     // disallow un-paren'd mixes of different operators
     // http://eslint.org/docs/rules/no-mixed-operators
-    'no-mixed-operators': ['error', {
-      groups: [
-        ['+', '-', '*', '/', '%', '**'],
-        ['&', '|', '^', '~', '<<', '>>', '>>>'],
-        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-        ['&&', '||'],
-        ['in', 'instanceof'],
-      ],
-      allowSamePrecedence: false,
-    }],
+    'no-mixed-operators': [
+      'error',
+      {
+        groups: [
+          ['+', '-', '*', '/', '%', '**'],
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof'],
+        ],
+        allowSamePrecedence: false,
+      },
+    ],
 
     // disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 'error',
@@ -247,15 +274,21 @@ module.exports = {
 
     // enforce line breaks between braces
     // TODO: enable once https://github.com/eslint/eslint/issues/6488 is resolved
-    'object-curly-newline': ['off', {
-      ObjectExpression: { minProperties: 0, multiline: true },
-      ObjectPattern: { minProperties: 0, multiline: true },
-    }],
+    'object-curly-newline': [
+      'off',
+      {
+        ObjectExpression: { minProperties: 0, multiline: true },
+        ObjectPattern: { minProperties: 0, multiline: true },
+      },
+    ],
 
     // enforce "same line" or "multiple line" on object properties.
-    'object-property-newline': ['off', {
-      allowMultiplePropertiesPerLine: true,
-    }],
+    'object-property-newline': [
+      'off',
+      {
+        allowMultiplePropertiesPerLine: true,
+      },
+    ],
 
     // allow just one var statement per function
     'one-var': ['error', { initialized: 'never' }],
@@ -273,7 +306,11 @@ module.exports = {
     'padded-blocks': ['error', 'never'],
 
     // require quotes around object literal property names
-    'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
+    'quote-props': [
+      'error',
+      'as-needed',
+      { keywords: false, unnecessary: true, numbers: false },
+    ],
 
     // specify whether double or single quotes should be used
     quotes: ['error', 'single', { avoidEscape: true }],
@@ -298,11 +335,14 @@ module.exports = {
     'space-before-blocks': 'error',
 
     // require or disallow space before function opening parenthesis
-    'space-before-function-paren': ['error', {
-      anonymous: 'never',
-      named: 'never',
-      asyncArrow: 'always',
-    }],
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'never',
+        named: 'never',
+        asyncArrow: 'always',
+      },
+    ],
 
     // require or disallow spaces inside parentheses
     'space-in-parens': ['error', 'never'],
@@ -311,25 +351,31 @@ module.exports = {
     'space-infix-ops': 'error',
 
     // Require or disallow spaces before/after unary operators
-    'space-unary-ops': ['error', {
-      words: true,
-      nonwords: false,
-      overrides: {
+    'space-unary-ops': [
+      'error',
+      {
+        words: true,
+        nonwords: false,
+        overrides: {},
       },
-    }],
+    ],
 
     // require or disallow a space immediately following the // or /* in a comment
-    'spaced-comment': ['error', 'always', {
-      line: {
-        exceptions: ['-', '+'],
-        markers: ['=', '!'], // space here to support sprockets directives
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          exceptions: ['-', '+'],
+          markers: ['=', '!'], // space here to support sprockets directives
+        },
+        block: {
+          exceptions: ['-', '+'],
+          markers: ['=', '!'], // space here to support sprockets directives
+          balanced: false,
+        },
       },
-      block: {
-        exceptions: ['-', '+'],
-        markers: ['=', '!'], // space here to support sprockets directives
-        balanced: false,
-      },
-    }],
+    ],
 
     // disallow spacing between template tags and their literals
     'template-tag-spacing': ['error', 'never'],

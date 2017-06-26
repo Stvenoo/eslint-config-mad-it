@@ -1,7 +1,5 @@
 module.exports = {
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -84,11 +82,13 @@ module.exports = {
 
     // Prevent unused propType definitions
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
-    'react/no-unused-prop-types': ['error', {
-      customValidators: [
-      ],
-      skipShapeProps: true,
-    }],
+    'react/no-unused-prop-types': [
+      'error',
+      {
+        customValidators: [],
+        skipShapeProps: true,
+      },
+    ],
 
     // Require ES6 class declarations over React.createClass
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
@@ -120,35 +120,39 @@ module.exports = {
 
     // Enforce component methods order
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
-    'react/sort-comp': ['error', {
-      order: [
-        'static-methods',
-        'lifecycle',
-        '/^on.+$/',
-        '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-        'everything-else',
-        '/^render.+$/',
-        'render',
-      ],
-    }],
+    'react/sort-comp': [
+      'error',
+      {
+        order: [
+          'static-methods',
+          'lifecycle',
+          '/^on.+$/',
+          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+          'everything-else',
+          '/^render.+$/',
+          'render',
+        ],
+      },
+    ],
 
     // Enforce propTypes declarations alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
-    'react/sort-prop-types': ['off', {
-      ignoreCase: true,
-      callbacksLast: false,
-      requiredFirst: false,
-    }],
+    'react/sort-prop-types': [
+      'off',
+      {
+        ignoreCase: true,
+        callbacksLast: false,
+        requiredFirst: false,
+      },
+    ],
 
     // Require style prop value be an object or var
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
     'react/style-prop-object': 'error',
 
-
     // ----------------------------------------------------------------------------------------
     // ---------------------------------- JSX specific rules ----------------------------------
     // ----------------------------------------------------------------------------------------
-
 
     // Enforce boolean attributes notation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
@@ -176,10 +180,13 @@ module.exports = {
 
     // Enforce event handler naming conventions in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
-    'react/jsx-handler-names': ['off', {
-      eventHandlerPrefix: 'handle',
-      eventHandlerPropPrefix: 'on',
-    }],
+    'react/jsx-handler-names': [
+      'off',
+      {
+        eventHandlerPrefix: 'handle',
+        eventHandlerPropPrefix: 'on',
+      },
+    ],
 
     // Enforce JSX indentation
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
@@ -199,11 +206,14 @@ module.exports = {
 
     // Prevent usage of .bind() in JSX props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
-    'react/jsx-no-bind': ['off', {
-      ignoreRefs: true,
-      allowArrowFunctions: true,
-      allowBind: false,
-    }],
+    'react/jsx-no-bind': [
+      'off',
+      {
+        ignoreRefs: true,
+        allowArrowFunctions: true,
+        allowBind: false,
+      },
+    ],
 
     // prevent accidental JS comments from being injected into JSX as text
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
@@ -227,19 +237,25 @@ module.exports = {
 
     // Enforce PascalCase for user-defined JSX components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
-    'react/jsx-pascal-case': ['error', {
-      allowAllCaps: true,
-      ignore: [],
-    }],
+    'react/jsx-pascal-case': [
+      'error',
+      {
+        allowAllCaps: true,
+        ignore: [],
+      },
+    ],
 
     // Enforce props alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
-    'react/jsx-sort-props': ['off', {
-      ignoreCase: true,
-      callbacksLast: false,
-      shorthandFirst: false,
-      shorthandLast: false,
-    }],
+    'react/jsx-sort-props': [
+      'off',
+      {
+        ignoreCase: true,
+        callbacksLast: false,
+        shorthandFirst: false,
+        shorthandLast: false,
+      },
+    ],
 
     // Enforce spaces before the closing bracket of self-closing JSX elements
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
@@ -247,11 +263,14 @@ module.exports = {
 
     // Validate whitespace in and around the JSX opening and closing brackets
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md
-    'react/jsx-tag-spacing': ['error', {
-      closingSlash: 'never',
-      beforeSelfClosing: 'always',
-      afterOpening: 'never',
-    }],
+    'react/jsx-tag-spacing': [
+      'error',
+      {
+        closingSlash: 'never',
+        beforeSelfClosing: 'always',
+        afterOpening: 'never',
+      },
+    ],
 
     // Prevent React to be incorrectly marked as unused
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
@@ -263,11 +282,14 @@ module.exports = {
 
     // Prevent missing parentheses around multilines JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
-    'react/jsx-wrap-multilines': ['error', {
-      declaration: true,
-      assignment: true,
-      return: true,
-    }],
+    'react/jsx-wrap-multilines': [
+      'error',
+      {
+        declaration: true,
+        assignment: true,
+        return: true,
+      },
+    ],
   },
   settings: {
     'import/resolver': {

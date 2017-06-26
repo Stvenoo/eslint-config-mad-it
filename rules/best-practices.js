@@ -83,12 +83,15 @@ module.exports = {
 
     // disallow shorthand type conversions
     // TODO discuss
-    'no-implicit-coercion': ['off', {
-      boolean: false,
-      number: true,
-      string: true,
-      allow: [],
-    }],
+    'no-implicit-coercion': [
+      'off',
+      {
+        boolean: false,
+        number: true,
+        string: true,
+        allow: [],
+      },
+    ],
 
     // disallow variable and function declarations in the global scope
     'no-implicit-globals': 'error',
@@ -112,12 +115,15 @@ module.exports = {
     'no-loop-func': 'error',
 
     // disallow magic numbers
-    'no-magic-numbers': ['off', {
-      ignore: [],
-      ignoreArrayIndexes: true,
-      enforceConst: true,
-      detectObjects: false,
-    }],
+    'no-magic-numbers': [
+      'off',
+      {
+        ignore: [],
+        ignoreArrayIndexes: true,
+        enforceConst: true,
+        detectObjects: false,
+      },
+    ],
 
     // disallow multiple spaces
     'no-multi-spaces': 'error',
@@ -152,21 +158,27 @@ module.exports = {
     'no-redeclare': 'error',
 
     // disallow certain object properties
-    'no-restricted-properties': ['error', {
-      object: 'arguments',
-      property: 'callee',
-      message: 'arguments.callee is deprecated',
-    }, {
-      property: '__defineGetter__',
-      message: 'Please use Object.defineProperty instead.',
-    }, {
-      property: '__defineSetter__',
-      message: 'Please use Object.defineProperty instead.',
-    }, {
-      object: 'Math',
-      property: 'pow',
-      message: 'Use the exponentiation operator (**) instead.',
-    }],
+    'no-restricted-properties': [
+      'error',
+      {
+        object: 'arguments',
+        property: 'callee',
+        message: 'arguments.callee is deprecated',
+      },
+      {
+        property: '__defineGetter__',
+        message: 'Please use Object.defineProperty instead.',
+      },
+      {
+        property: '__defineSetter__',
+        message: 'Please use Object.defineProperty instead.',
+      },
+      {
+        object: 'Math',
+        property: 'pow',
+        message: 'Use the exponentiation operator (**) instead.',
+      },
+    ],
 
     // disallow unnecessary return await
     'no-return-await': 'error',
@@ -193,10 +205,13 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
 
     // disallow usage of expressions in statement position
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: false,
-      allowTernary: false,
-    }],
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: false,
+        allowTernary: false,
+      },
+    ],
 
     // disallow unused labels
     'no-unused-labels': 'error',
@@ -217,7 +232,10 @@ module.exports = {
     'no-void': 'error',
 
     // disallow usage of configurable warning terms in comments: e.g. todo
-    'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+    'no-warning-comments': [
+      'off',
+      { terms: ['todo', 'fixme', 'xxx'], location: 'start' },
+    ],
 
     // disallow with statements
     'no-with': 'error',

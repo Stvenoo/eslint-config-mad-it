@@ -10,7 +10,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage && codecov",
-    "prepublish": "npm run lint && npm run test"
+    "prepublish": "npm run pretty && npm run lint && npm run test",
+    "pretty": "prettier --single-quote --trailing-comma es5 --write rules/*.js"
   },
   "repository": {
     "type": "git",
@@ -30,10 +31,11 @@
   "homepage": "https://github.com/Stvenoo/eslint-config-dlw",
   "devDependencies": {
     "codecov": "^1.0.1",
-    "eslint": "^3.19.0",
-    "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.10.3",
-    "jest": "^18.1.0"
+    "eslint": "^4.1.1",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^20.0.4",
+    "prettier": "^1.4.4"
   }
 }
