@@ -50,6 +50,9 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
     'import/no-absolute-path': 'error',
 
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-anonymous-default-export.md
+    'import/no-anonymous-default-export': 'off',
+
     // Forbid require() calls with expressions
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
     'import/no-dynamic-require': 'error',

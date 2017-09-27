@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dlw",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "An ESLint config used by the JavaScript developers at Delaware Consulting",
   "main": "index.js",
   "scripts": {
@@ -31,11 +31,11 @@
   "homepage": "https://github.com/Stvenoo/eslint-config-dlw",
   "devDependencies": {
     "codecov": "^1.0.1",
-    "eslint": "^4.1.1",
+    "eslint": "^4.7.2",
     "eslint-find-rules": "^3.1.1",
-    "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-react": "^7.1.0",
-    "jest": "^20.0.4",
-    "prettier": "^1.4.4"
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.0",
+    "prettier": "^1.7.0"
   }
 }
