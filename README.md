@@ -1,18 +1,18 @@
-# eslint-config-dlw [![Build status](https://img.shields.io/travis/Stvenoo/eslint-config-dlw.svg)](https://travis-ci.org/Stvenoo/eslint-config-dlw) [![Codecov](https://img.shields.io/codecov/c/github/Stvenoo/eslint-config-dlw.svg)](https://codecov.io/gh/Stvenoo/eslint-config-dlw) [![GitHub release](https://img.shields.io/github/release/Stvenoo/eslint-config-dlw.svg)](https://github.com/Stvenoo/eslint-config-dlw/releases)
+# eslint-config-mad-it
 
-An opinionated list of ESLint rules used at Delaware Consulting.
+An opinionated list of ESLint rules used by Mad-IT
 
 ## Installation
 
 ```sh
-npm install --save-dev eslint eslint-plugin-import eslint-config-dlw
+npm install --save-dev eslint eslint-plugin-import eslint-config-mad-it
 ```
 
 Then add the extends to your `.eslintrc`:
 
 ```javascript
 {
-  "extends": "dlw",
+  "extends": "mad-it",
   "rules": {
     // your overrides
   }
@@ -21,13 +21,13 @@ Then add the extends to your `.eslintrc`:
 
 ## React configuration
 
-For supporting React projects, also add the dlw/rules/react extension:
+For supporting React projects, also add the mad-it/rules/react extension:
 
 ```javascript
 {
   "extends": [
-    "dlw",
-    "dlw/rules/react"
+    "mad-it",
+    "mad-it/rules/react"
   ]
 }
 ```
