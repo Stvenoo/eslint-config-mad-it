@@ -70,6 +70,8 @@ module.exports = {
     // require identifiers to match a specified regular expression
     'id-match': 'off',
 
+    'implicit-arrow-linebreak': ['error', 'beside'],
+
     // this option sets a specific tab width for your code
     indent: [
       'error',
@@ -122,14 +124,7 @@ module.exports = {
     // enforces empty lines around comments
     'lines-around-comment': 'off',
 
-    // require or disallow newlines around directives
-    'lines-around-directive': [
-      'error',
-      {
-        before: 'never',
-        after: 'always',
-      },
-    ],
+    'lines-between-class-members': ['error', 'always'],
 
     // specify the maximum depth that blocks can be nested
     'max-depth': ['error', 20],
@@ -168,6 +163,8 @@ module.exports = {
     // specify the maximum number of statement allowed in a function
     'max-statements': ['off', 10],
 
+    'multiline-comment-style': 'off',
+
     // restrict the number of statements per line
     // http://eslint.org/docs/rules/max-statements-per-line
     'max-statements-per-line': ['off', { max: 1 }],
@@ -186,12 +183,6 @@ module.exports = {
 
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': 'error',
-
-    // require or disallow an empty line after variable declarations
-    'newline-after-var': 'off',
-
-    // require an empty line before return statements
-    'newline-before-return': 'off',
 
     // enforces new line after each method call in the chain to make it
     // more readable and easy to maintain

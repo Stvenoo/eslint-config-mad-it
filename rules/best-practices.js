@@ -82,7 +82,6 @@ module.exports = {
     'no-global-assign': 'error',
 
     // disallow shorthand type conversions
-    // TODO discuss
     'no-implicit-coercion': [
       'off',
       {

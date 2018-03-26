@@ -1,41 +1,38 @@
 {
-  "name": "eslint-config-dlw",
-  "version": "2.1.0",
-  "description": "An ESLint config used by the JavaScript developers at Delaware Consulting",
+  "name": "eslint-config-mad-it",
+  "version": "1.0.0",
+  "description": "An ESLint config used by Mad-IT",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:unused": "eslint-find-rules --unused",
+    "lint:deprecated": "eslint-find-rules --deprecated",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage && codecov",
-    "prepublish": "npm run pretty && npm run lint && npm run test",
-    "pretty": "prettier --single-quote --trailing-comma es5 --write rules/*.js"
+    "prepublish":
+      "npm run pretty && npm run lint && npm run test && npm run pretty",
+    "pretty":
+      "prettier-eslint --config \"./.prettierrc\" --write \"rules/**/*.js\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Stvenoo/eslint-config-dlw"
+    "url": "https://github.com/Stvenoo/eslint-config-mad-it"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "javascript"
-  ],
+  "keywords": ["eslint", "eslintconfig", "config", "javascript"],
   "author": "Steven Van Eenoo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Stvenoo/eslint-config-dlw/issues"
+    "url": "https://github.com/Stvenoo/eslint-config-mad-it/issues"
   },
-  "homepage": "https://github.com/Stvenoo/eslint-config-dlw",
+  "homepage": "https://github.com/Stvenoo/eslint-config-mad-it",
   "devDependencies": {
-    "codecov": "^1.0.1",
-    "eslint": "^4.7.2",
-    "eslint-find-rules": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-react": "^7.4.0",
-    "jest": "^21.2.0",
-    "prettier": "^1.7.0"
+    "eslint": "^4.19.1",
+    "eslint-find-rules": "^3.2.2",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "prettier": "^1.11.1",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }

@@ -70,6 +70,10 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
     'import/no-webpack-loader-syntax': 'error',
 
+    // Forbid a module from importing itself
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md
+    'import/no-self-import': 'error',
+
     // ----------------------------------------------------------------------------------------
     // ---------------------------------- Helpful warnings ------------------------------------
     // ----------------------------------------------------------------------------------------
@@ -127,6 +131,10 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
     'import/first': ['error', 'absolute-first'],
 
+    // Ensure all exports appear after other statements
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/exports-last.md
+    'import/exports-last': 'error',
+
     // disallow duplicate imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
     'import/no-duplicates': 'error',
@@ -169,7 +177,7 @@ module.exports = {
 
     // Require modules with a single export to use a default export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-    'import/prefer-default-export': 'error',
+    'import/prefer-default-export': 'off',
 
     // Forbid modules to have too many dependencies
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
@@ -183,5 +191,13 @@ module.exports = {
     // Prevent importing the default as if it were named
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
     'import/no-named-default': 'error',
+
+    // Forbid default exports
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-default-export.md
+    'import/no-default-export': 'off',
+
+    // Prefer named exports to be grouped together in a single export declaration
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/group-exports.md
+    'import/group-exports': 'off',
   },
 };
