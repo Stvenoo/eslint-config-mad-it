@@ -17,6 +17,9 @@
     "type": "git",
     "url": "https://github.com/Stvenoo/eslint-config-mad-it"
   },
+  "jest": {
+    "testURL": "http://localhost"
+  },
   "keywords": [
     "eslint",
     "eslintconfig",
