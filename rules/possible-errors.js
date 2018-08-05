@@ -6,6 +6,9 @@ module.exports = {
     // enforce return statements in getters
     'getter-return': 'error',
 
+    // disallow using an async function as a Promise executor
+    'no-async-promise-executor': 'error',
+
     // disallow comparing against -0
     'no-compare-neg-zero': 'error',
 
@@ -73,6 +76,9 @@ module.exports = {
     // disallow irregular whitespace outside of strings and comments
     'no-irregular-whitespace': 'error',
 
+    // disallow characters which are made with multiple code points in character class syntax
+    'no-misleading-character-class': 'off',
+
     // disallow the use of object properties of the global object (Math and JSON) as functions
     'no-obj-calls': 'error',
 
@@ -99,6 +105,9 @@ module.exports = {
 
     // disallow negating the left operand of relational operators
     'no-unsafe-negation': 'error',
+
+    // disallow assignments that can lead to race conditions due to usage of await or yield
+    'require-atomic-updates': 'error',
 
     // disallow comparisons with the value NaN
     'use-isnan': 'error',

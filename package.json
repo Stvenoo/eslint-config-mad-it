@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mad-it",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An ESLint config used by Mad-IT",
   "main": "index.js",
   "scripts": {
@@ -10,16 +10,19 @@
     "lint:deprecated": "eslint-find-rules --deprecated",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prepublish":
-      "npm run pretty && npm run lint && npm run test && npm run pretty",
-    "pretty":
-      "prettier-eslint --config \"./.prettierrc\" --write \"rules/**/*.js\""
+    "prepublish": "npm run pretty && npm run lint && npm run test && npm run pretty",
+    "pretty": "prettier-eslint --config \"./.prettierrc\" --write \"rules/**/*.js\""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Stvenoo/eslint-config-mad-it"
   },
-  "keywords": ["eslint", "eslintconfig", "config", "javascript"],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript"
+  ],
   "author": "Steven Van Eenoo",
   "license": "MIT",
   "bugs": {
@@ -27,11 +30,11 @@
   },
   "homepage": "https://github.com/Stvenoo/eslint-config-mad-it",
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^5.3.0",
     "eslint-find-rules": "^3.2.2",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-react": "^7.7.0",
-    "jest": "^22.4.3",
+    "jest": "^23.4.2",
     "prettier": "^1.11.1",
     "prettier-eslint-cli": "^4.7.1"
   }

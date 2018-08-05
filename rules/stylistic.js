@@ -154,6 +154,9 @@ module.exports = {
       },
     ],
 
+    // enforce a maximum number of line of code in a function
+    'max-lines-per-function': 'off',
+
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 'error',
 
@@ -308,6 +311,9 @@ module.exports = {
 
     // require or disallow padding lines between statements
     'padding-line-between-statements': 'off',
+
+    // disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead.
+    'prefer-object-spread': 'error',
 
     // require quotes around object literal property names
     'quote-props': [

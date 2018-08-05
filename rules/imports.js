@@ -74,6 +74,18 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md
     'import/no-self-import': 'error',
 
+    // Forbid a module from importing a module with a dependency path back to itself
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md
+    'import/no-cycle': 'off',
+
+    // Prevent unnecessary path segments in import and require statements
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
+    'import/no-useless-path-segments': 'error',
+
+    // Forbid importing modules from parent directories
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-relative-parent-imports.md
+    'import/no-relative-parent-imports': 'off',
+
     // ----------------------------------------------------------------------------------------
     // ---------------------------------- Helpful warnings ------------------------------------
     // ----------------------------------------------------------------------------------------
@@ -199,5 +211,9 @@ module.exports = {
     // Prefer named exports to be grouped together in a single export declaration
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/group-exports.md
     'import/group-exports': 'off',
+
+    // Enforce a leading comment with the webpackChunkName for dynamic imports
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/dynamic-import-chunkname.md
+    'import/dynamic-import-chunkname': 'error',
   },
 };
